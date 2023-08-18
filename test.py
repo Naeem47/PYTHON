@@ -136,13 +136,72 @@
 # })
 # print(d1)
 
-user_friends = [10001,1,55,-8,0,5,-7]
+# user_friends = [10001,1,55,-8,0,5,-7]
 
-for id in user_friends :
-    if id == 55:
-        continue
-    if id == 5:
-        break
-    print("friend id",id)
+# for id in user_friends :
+#     if id == 55:
+#         continue
+#     if id == 5:
+#         break
+#     print("friend id",id)
 
 
+# while loop
+
+# x = 5
+# while  x > 5:
+#     print(x) 
+#     x-=1 #4
+
+
+
+# user_input = input("Enter a number between 1 and 10 \n")
+# user_input =int(user_input)
+# while user_input < 0 or user_input > 10:
+#     user_input  = input ("please input a valid number between 1 and 10 \n")
+#     user_input = int(user_input)
+# print ("valid number is",user_input)
+
+
+# list = ['0','1','2','3','4','5','6',]
+
+
+# while len(list)>0:
+#     list.pop()
+#     print(list)
+
+employe_list = [
+    {
+        "id" : 1,
+        "Name" : "naeem"
+    },
+    {
+        "id" : 2,
+        "Name" : "nahid"
+    },
+    {
+        "id" : 3,
+        "Name" : "shahid"
+    },
+    {
+        "id" : 4,
+        "Name" : "naeem"
+    },
+    {
+        "id" : 5,
+        "Name" : "naeem"
+    },
+
+   ]
+def funct(x):
+  for i in employe_list:
+    if i["id"] == x:
+        # print (employe_list[i])
+        value=i
+
+    else:
+       continue        
+    return value
+    
+value =  funct(1)
+print(value)
